@@ -1,0 +1,2733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{514498D6-F7E3-4302-884E-22065101A9F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PipeLine</RootNamespace>
+    <AssemblyName>PipeLine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.Charts.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2" />
+    <Reference Include="DevExpress.Map.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.2.Core" />
+    <Reference Include="DevExpress.Utils.v13.2" />
+    <Reference Include="DevExpress.XtraBars.v13.2" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraCharts.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraCharts.v13.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraCharts.v13.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraGrid.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraLayout.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraPrinting.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Animation, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DisplayUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.NetworkAnalysis, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseComm\DeleteLayer.cs" />
+    <Compile Include="BaseComm\FullExtent.cs" />
+    <Compile Include="BaseComm\OpenAttributeTable.cs" />
+    <Compile Include="BaseComm\Owntolayer.cs" />
+    <Compile Include="BaseComm\TrackLine.cs" />
+    <Compile Include="ChildWindow\3DExcavation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\3DExcavation.designer.cs">
+      <DependentUpon>3DExcavation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\AboutUs.designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\AttributeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\AttributeTable.Designer.cs">
+      <DependentUpon>AttributeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\BufferRadius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\BufferRadius.designer.cs">
+      <DependentUpon>BufferRadius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\BurstPointAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\BurstPointAnalysis.Designer.cs">
+      <DependentUpon>BurstPointAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\connectionAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\connectionAnalysis.Designer.cs">
+      <DependentUpon>connectionAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\ConnectionSDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\ConnectionSDE.Designer.cs">
+      <DependentUpon>ConnectionSDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\Excavation3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\Excavation3D.Designer.cs">
+      <DependentUpon>Excavation3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\FieldType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\FieldType.Designer.cs">
+      <DependentUpon>FieldType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\FireAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\FireAnalysis.Designer.cs">
+      <DependentUpon>FireAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\FireConditon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\FireConditon.Designer.cs">
+      <DependentUpon>FireConditon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\LineAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\LineAnalysis.Designer.cs">
+      <DependentUpon>LineAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\MeasureArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\MeasureArea.Designer.cs">
+      <DependentUpon>MeasureArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\MeasureLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\MeasureLine.Designer.cs">
+      <DependentUpon>MeasureLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\MinRoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\MinRoad.Designer.cs">
+      <DependentUpon>MinRoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\otherQueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\otherQueryForm.Designer.cs">
+      <DependentUpon>otherQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\PipeLength.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\PipeLength.Designer.cs">
+      <DependentUpon>PipeLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\PipeLineStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\PipeLineStatistic.Designer.cs">
+      <DependentUpon>PipeLineStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\PipePointQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\PipePointQuery.Designer.cs">
+      <DependentUpon>PipePointQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\PointNumberQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\PointNumberQuery.Designer.cs">
+      <DependentUpon>PointNumberQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\PolygonQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\PolygonQuery.Designer.cs">
+      <DependentUpon>PolygonQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\Progress.Designer.cs">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\property_3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\property_3D.Designer.cs">
+      <DependentUpon>property_3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\RectangleSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\RectangleSelection.Designer.cs">
+      <DependentUpon>RectangleSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\RoamingSegment.cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\RoamingSegment.cs.designer.cs">
+      <DependentUpon>RoamingSegment.cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\SearchMapByAttribution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\SearchMapByAttribution.Designer.cs">
+      <DependentUpon>SearchMapByAttribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\SectionAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\SectionAnalysis.Designer.cs">
+      <DependentUpon>SectionAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\SymbolSelectorFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\SymbolSelectorFrm.Designer.cs">
+      <DependentUpon>SymbolSelectorFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\TempLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\TempLayer.Designer.cs">
+      <DependentUpon>TempLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\ThreeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\ThreeQuery.Designer.cs">
+      <DependentUpon>ThreeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildWindow\waiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildWindow\waiting.Designer.cs">
+      <DependentUpon>waiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\AddText.cs" />
+    <Compile Include="Class\ChartToExcel.cs" />
+    <Compile Include="Class\ChartToExcel_Length.cs" />
+    <Compile Include="Class\ChartToExcel_Line.cs" />
+    <Compile Include="Class\Dayofweek.cs" />
+    <Compile Include="Class\DrawLine.cs" />
+    <Compile Include="Class\Flash.cs" />
+    <Compile Include="Class\FlashFeature.cs" />
+    <Compile Include="Class\FlowDirectionAnalysis.cs" />
+    <Compile Include="Class\GetFireHydrant.cs" />
+    <Compile Include="Class\ImportOutExcel.cs" />
+    <Compile Include="Class\Length.cs" />
+    <Compile Include="Class\Numberic.cs" />
+    <Compile Include="Class\PointSelection.cs" />
+    <Compile Include="Class\PolygonElement.cs" />
+    <Compile Include="Diagram\PipeLength_Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagram\PipeLength_Chart.Designer.cs">
+      <DependentUpon>PipeLength_Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagram\PipeLineStatistic_Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagram\PipeLineStatistic_Chart.Designer.cs">
+      <DependentUpon>PipeLineStatistic_Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagram\PointNumber_Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagram\PointNumber_Chart.Designer.cs">
+      <DependentUpon>PointNumber_Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AnimationTracksHelper.cs" />
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildWindow\3DExcavation.resx">
+      <DependentUpon>3DExcavation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\AttributeTable.resx">
+      <DependentUpon>AttributeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\BufferRadius.resx">
+      <DependentUpon>BufferRadius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\BurstPointAnalysis.resx">
+      <DependentUpon>BurstPointAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\connectionAnalysis.resx">
+      <DependentUpon>connectionAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\ConnectionSDE.resx">
+      <DependentUpon>ConnectionSDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\Excavation3D.resx">
+      <DependentUpon>Excavation3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\FieldType.resx">
+      <DependentUpon>FieldType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\FireAnalysis.resx">
+      <DependentUpon>FireAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\FireConditon.resx">
+      <DependentUpon>FireConditon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\LineAnalysis.resx">
+      <DependentUpon>LineAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\MeasureArea.resx">
+      <DependentUpon>MeasureArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\MeasureLine.resx">
+      <DependentUpon>MeasureLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\MinRoad.resx">
+      <DependentUpon>MinRoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\otherQueryForm.resx">
+      <DependentUpon>otherQueryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\PipeLength.resx">
+      <DependentUpon>PipeLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\PipeLineStatistic.resx">
+      <DependentUpon>PipeLineStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\PipePointQuery.resx">
+      <DependentUpon>PipePointQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\PointNumberQuery.resx">
+      <DependentUpon>PointNumberQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\PolygonQuery.resx">
+      <DependentUpon>PolygonQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\Progress.resx">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\property_3D.resx">
+      <DependentUpon>property_3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\RectangleSelection.resx">
+      <DependentUpon>RectangleSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\RoamingSegment.cs.resx" />
+    <EmbeddedResource Include="ChildWindow\SearchMapByAttribution.resx">
+      <DependentUpon>SearchMapByAttribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\SectionAnalysis.resx">
+      <DependentUpon>SectionAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\SymbolSelectorFrm.resx">
+      <DependentUpon>SymbolSelectorFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\TempLayer.resx">
+      <DependentUpon>TempLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\ThreeQuery.resx">
+      <DependentUpon>ThreeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildWindow\waiting.resx">
+      <DependentUpon>waiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagram\PipeLength_Chart.resx">
+      <DependentUpon>PipeLength_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagram\PipeLineStatistic_Chart.resx">
+      <DependentUpon>PipeLineStatistic_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagram\PointNumber_Chart.resx">
+      <DependentUpon>PointNumber_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bin\Debug\2016-03-14\20160310数据属性添加.rar" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S5.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S5.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S5.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S5.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S5.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S5.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S5.sxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.sxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\一二轧回流水管.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\一二轧回流水管.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\一二轧回流水管.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\一二轧回流水管.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\一二轧回流水管.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\一二轧回流水管.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\一二轧回流水管.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\三维管道.sxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\三维管道02.sxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\主电动等冷却净环回水管.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\主电动等冷却净环回流.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\主电动等冷却净环回流.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\主电动等冷却净环回流.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\主电动等冷却净环回流.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\主电动等冷却净环回流.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\主电动等冷却净环回流.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\回用水给水管.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\回用水给水管.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\回用水给水管.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\回用水给水管.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\回用水给水管.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\回用水给水管.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\回用水给水管.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管2.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管2.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管2.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管2.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管2.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管2.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管2.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\浊环给水管.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\浊环给水管.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\浊环给水管.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\浊环给水管.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\浊环给水管.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\浊环给水管.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\浊环给水管.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\热力管道.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\热力管道.prj" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\热力管道.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\热力管道.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\热力管道.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\热力管道.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\燃气管道.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\燃气管道.prj" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\燃气管道.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\燃气管道.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\燃气管道.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\燃气管道.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\生产水管.CPG" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\生产水管.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\生产水管.mxd" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\生产水管.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\生产水管.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\生产水管.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\生产水管.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\电气管线.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\电气管线.prj" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\电气管线.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\电气管线.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\电气管线.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\电气管线.shx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\给排水管道.dbf" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\给排水管道.prj" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\给排水管道.sbn" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\给排水管道.sbx" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\给排水管道.shp" />
+    <None Include="bin\Debug\2016-03-14\3Ddata - 修改\给排水管道.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000001.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000001.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000001.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000001.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000001.TablesByName.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000002.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000002.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000003.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000003.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000003.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000004.CatItemsByPhysicalName.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000004.CatItemsByType.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000004.FDO_UUID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000004.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000004.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000004.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000004.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000004.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000005.CatRelsByDestinationID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000005.CatRelsByOriginID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000005.CatRelsByType.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000005.FDO_UUID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000005.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000005.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000005.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000005.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.CatRelTypesByBackwardLabel.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.CatRelTypesByDestItemTypeID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.CatRelTypesByForwardLabel.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.CatRelTypesByName.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.CatRelTypesByOriginItemTypeID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.CatRelTypesByUUID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000006.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000007.CatItemTypesByName.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000007.CatItemTypesByParentTypeID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000007.CatItemTypesByUUID.atx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000007.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000007.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000007.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000000e.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000000e.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000000e.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000000e.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000000e.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000014.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000014.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000014.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000014.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000014.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000016.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000016.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000016.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000016.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000016.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000017.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000017.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000017.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000017.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000017.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000018.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000018.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000018.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000018.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000018.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001b.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001b.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001b.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001b.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001b.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001c.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001c.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001c.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001c.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001c.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001d.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001d.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001d.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001d.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001d.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001f.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001f.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001f.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000001f.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000022.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000022.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000022.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000022.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000055.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000055.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000055.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000055.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000058.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000058.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000058.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a00000058.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000005b.freelist" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000005b.gdbindexes" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000005b.gdbtable" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000005b.gdbtablx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\a0000005b.spx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\factory.sxd" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\gdb" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\lizi.sxd" />
+    <None Include="bin\Debug\2016-03-14\最新数据\model.gdb\timestamps" />
+    <None Include="bin\Debug\2016-03-14\最新数据\S2.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\S2.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\S2.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\S2.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\S2.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\Untitled.sxd" />
+    <None Include="bin\Debug\2016-03-14\最新数据\管线模型.sxd" />
+    <None Include="bin\Debug\2016-03-14\最新数据\西宁特钢模型.sxd" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\along.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\along.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\along.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\along.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\along.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\along.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\hydrant well.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\hydrant well.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\hydrant well.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\hydrant well.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\hydrant well.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\hydrant well.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\hydrant well.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\Pipe.mxd" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.shp.ed.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.shp.SHIMENG-PC.11352.12220.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5connectpoint.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5connectpoint.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5connectpoint.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5connectpoint.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5connectpoint.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5connectpoint.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5connectpoint.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5joggle.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5joggle.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5joggle.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5joggle.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5joggle.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5joggle.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S5joggle.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.shp.ed.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.shp.SHIMENG-PC.11352.12220.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8connectpoint.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8connectpoint.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8connectpoint.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8connectpoint.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8connectpoint.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8connectpoint.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8connectpoint.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8joggle.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8joggle.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8joggle.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8joggle.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8joggle.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8joggle.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\S8joggle.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\shape_test.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\shape_test.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\shape_test.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\shape_test.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\test_shape.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\test_shape.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\test_shape.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\test_shape.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\test_shape.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\test_shape.shx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\well point.dbf" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\well point.prj" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\well point.sbn" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\well point.sbx" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\well point.shp" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\well point.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\2016-03-14\最新数据\配准后矢量新\well point.shx" />
+    <None Include="bin\Debug\2016-03-14\水井\水井模型.dae" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_1.dae" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_1.kml" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_12.dae" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_12.kml" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_14.dae" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_14.kml" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_2.dae" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_2.kml" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_5.dae" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_5.kml" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_9.dae" />
+    <None Include="bin\Debug\2016-03-14\水井\水井纹理\ID_9.kml" />
+    <None Include="bin\Debug\2016-03-14\连接点\S5连接点\S5连接点.dbf" />
+    <None Include="bin\Debug\2016-03-14\连接点\S5连接点\S5连接点.prj" />
+    <None Include="bin\Debug\2016-03-14\连接点\S5连接点\S5连接点.sbn" />
+    <None Include="bin\Debug\2016-03-14\连接点\S5连接点\S5连接点.sbx" />
+    <None Include="bin\Debug\2016-03-14\连接点\S5连接点\S5连接点.shp" />
+    <None Include="bin\Debug\2016-03-14\连接点\S5连接点\S5连接点.shx" />
+    <None Include="bin\Debug\2016-03-14\连接点\S8连接点\S8阀门.dbf" />
+    <None Include="bin\Debug\2016-03-14\连接点\S8连接点\S8阀门.prj" />
+    <None Include="bin\Debug\2016-03-14\连接点\S8连接点\S8阀门.sbn" />
+    <None Include="bin\Debug\2016-03-14\连接点\S8连接点\S8阀门.sbx" />
+    <None Include="bin\Debug\2016-03-14\连接点\S8连接点\S8阀门.shp" />
+    <None Include="bin\Debug\2016-03-14\连接点\S8连接点\S8阀门.shx" />
+    <None Include="bin\Debug\2016-03-14\连接点\一二轧回流水管.dbf" />
+    <None Include="bin\Debug\2016-03-14\连接点\一二轧回流水管.prj" />
+    <None Include="bin\Debug\2016-03-14\连接点\一二轧回流水管.sbn" />
+    <None Include="bin\Debug\2016-03-14\连接点\一二轧回流水管.sbx" />
+    <None Include="bin\Debug\2016-03-14\连接点\一二轧回流水管.shp" />
+    <None Include="bin\Debug\2016-03-14\连接点\一二轧回流水管.shx" />
+    <None Include="bin\Debug\2016-03-14\连接点\主电动等冷却净环回流连接点.dbf" />
+    <None Include="bin\Debug\2016-03-14\连接点\主电动等冷却净环回流连接点.prj" />
+    <None Include="bin\Debug\2016-03-14\连接点\主电动等冷却净环回流连接点.sbn" />
+    <None Include="bin\Debug\2016-03-14\连接点\主电动等冷却净环回流连接点.sbx" />
+    <None Include="bin\Debug\2016-03-14\连接点\主电动等冷却净环回流连接点.shp" />
+    <None Include="bin\Debug\2016-03-14\连接点\主电动等冷却净环回流连接点.shx" />
+    <None Include="bin\Debug\2016-03-14\连接点\回用水给水管阀门.dbf" />
+    <None Include="bin\Debug\2016-03-14\连接点\回用水给水管阀门.prj" />
+    <None Include="bin\Debug\2016-03-14\连接点\回用水给水管阀门.sbn" />
+    <None Include="bin\Debug\2016-03-14\连接点\回用水给水管阀门.sbx" />
+    <None Include="bin\Debug\2016-03-14\连接点\回用水给水管阀门.shp" />
+    <None Include="bin\Debug\2016-03-14\连接点\回用水给水管阀门.shx" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管2连接点.dbf" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管2连接点.prj" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管2连接点.sbn" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管2连接点.sbx" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管2连接点.shp" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管2连接点.shx" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管阀门.dbf" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管阀门.prj" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管阀门.sbn" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管阀门.sbx" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管阀门.shp" />
+    <None Include="bin\Debug\2016-03-14\连接点\排水管阀门.shx" />
+    <None Include="bin\Debug\2016-03-14\连接点\生产水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-14\连接点\生产水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-14\连接点\生产水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-14\连接点\生产水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-14\连接点\生产水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-14\连接点\生产水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门.dae" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门.dbf" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门.prj" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门.sbn" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门.sbx" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门.shp" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02.dbf" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02.prj" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02.sbn" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02.sbx" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02.shp" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02\S5阀门02.dae" />
+    <None Include="bin\Debug\2016-03-14\阀门\S8阀门\S8阀门.dbf" />
+    <None Include="bin\Debug\2016-03-14\阀门\S8阀门\S8阀门.prj" />
+    <None Include="bin\Debug\2016-03-14\阀门\S8阀门\S8阀门.sbn" />
+    <None Include="bin\Debug\2016-03-14\阀门\S8阀门\S8阀门.sbx" />
+    <None Include="bin\Debug\2016-03-14\阀门\S8阀门\S8阀门.shp" />
+    <None Include="bin\Debug\2016-03-14\阀门\S8阀门\S8阀门.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧.dbf" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧.prj" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧.sbn" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧.sbx" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧.shp" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧02.dbf" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧02.prj" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧02.sbn" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧02.sbx" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧02.shp" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧02.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧阀门阀门.dae" />
+    <None Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门.dbf" />
+    <None Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门.prj" />
+    <None Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门.sbn" />
+    <None Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门.sbx" />
+    <None Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门.shp" />
+    <None Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门\回用水给水管阀门.dae" />
+    <None Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门.dae" />
+    <None Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门.dbf" />
+    <None Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门.prj" />
+    <None Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门.sbn" />
+    <None Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门.sbx" />
+    <None Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门.shp" />
+    <None Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门.dae" />
+    <None Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门.dbf" />
+    <None Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门.prj" />
+    <None Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门.sbn" />
+    <None Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门.sbx" />
+    <None Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门.shp" />
+    <None Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门.shx" />
+    <None Include="bin\Debug\2016-03-14\阀门纹理\阀门.dae" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合.rar" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\20160322数据整合.mxd" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\S8连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管道连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管道连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管道连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管道连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管道连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管道连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管道连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\井.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\井.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\井.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\井.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\井.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\井.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\井.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水井.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水井.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水井.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水井.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水井.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水井.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水井.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\排水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\热力管道连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产、消防给水阀门井.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产、消防给水阀门井.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产、消防给水阀门井.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产、消防给水阀门井.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产、消防给水阀门井.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产、消防给水阀门井.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产、消防给水阀门井.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电气管道连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆拐点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆拐点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆拐点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆拐点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆拐点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆拐点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆拐点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\道路.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\道路.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\道路.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\道路.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\道路.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\道路.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\道路.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\铁路.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\铁路.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\铁路.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\铁路.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\铁路.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\铁路.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.CPG" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.shx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\预留大棒用水接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\预留大棒用水接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\预留大棒用水接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\预留大棒用水接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\预留大棒用水接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\预留大棒用水接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160322数据整合\预留大棒用水接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合.rar" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\道路.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\道路.prj" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\道路.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\道路.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\道路.shp" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\道路.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\道路.shx" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\道路提取.mxd" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\铁路.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\铁路.prj" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\铁路.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\铁路.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\铁路.shp" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\铁路.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160324数据整合\20160324数据整合\铁路.shx" />
+    <None Include="bin\Debug\2016-03-22\20160411数据整合.rar" />
+    <None Include="bin\Debug\2016-03-22\20160411数据整合\20160411数据整合\建筑物.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160411数据整合\20160411数据整合\建筑物.mxd" />
+    <None Include="bin\Debug\2016-03-22\20160411数据整合\20160411数据整合\建筑物.prj" />
+    <None Include="bin\Debug\2016-03-22\20160411数据整合\20160411数据整合\建筑物.shp" />
+    <None Include="bin\Debug\2016-03-22\20160411数据整合\20160411数据整合\建筑物.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160411数据整合\20160411数据整合\建筑物.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合.rar" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\20160426数据整理.mxd" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水井.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水井.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水井.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水井.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水井.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水井.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水井.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管连接点.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管连接点.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管连接点.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管连接点.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管连接点.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管连接点.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管连接点.shx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\雨水篦子.dbf" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\雨水篦子.prj" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\雨水篦子.sbn" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\雨水篦子.sbx" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\雨水篦子.shp" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\雨水篦子.shp.FENGZHIWEI-PC.5880.6156.sr.lock" />
+    <None Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\雨水篦子.shx" />
+    <None Include="bin\Debug\2016-03-22\XNGX.mxd" />
+    <None Include="bin\Debug\2016-3-1\Desktop.rar" />
+    <None Include="bin\Debug\2016-3-1\Desktop\0114.mxd" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\井.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\井.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\井.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\井.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\井.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\井.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\井.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道连接点.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\热力管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道连接点.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\生产、消防给水阀门井.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\生产、消防给水阀门井.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\生产、消防给水阀门井.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\生产、消防给水阀门井.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\生产、消防给水阀门井.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\生产、消防给水阀门井.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\生产、消防给水阀门井.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道连接点.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\电气管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道.shx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道连接点.cpg" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\井.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\井.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\井.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\井.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\井.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\井.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\热力管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\生产、消防给水阀门井.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\生产、消防给水阀门井.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\生产、消防给水阀门井.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\生产、消防给水阀门井.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\生产、消防给水阀门井.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\生产、消防给水阀门井.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\电气管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG.mxd" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S5连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\S8连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\XNTG.mxd" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管道连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管道连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管道连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管道连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管道连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管道连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\井.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\井.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\井.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\井.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\井.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\井.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水井.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水井.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水井.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水井.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水井.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水井.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管连接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管连接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管连接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管连接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管连接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管连接点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\电缆沟.cpg" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\电缆沟.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\电缆沟.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\电缆沟.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\电缆沟.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\电缆沟.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\电缆沟.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆.CPG" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆拐点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆拐点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆拐点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆拐点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆拐点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆拐点.shx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\预留大棒用水接点.dbf" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\预留大棒用水接点.prj" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\预留大棒用水接点.sbn" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\预留大棒用水接点.sbx" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\预留大棒用水接点.shp" />
+    <None Include="bin\Debug\2016-3-1\XNTG\XNTG\预留大棒用水接点.shx" />
+    <None Include="bin\Debug\pipeStyle\pipeline.ServerStyle" />
+    <None Include="bin\Debug\pipeStyle\pipeline02.ServerStyle" />
+    <None Include="bin\Debug\pipeStyle\pipeline.style" />
+    <None Include="bin\Debug\Styles\test.ServerStyle" />
+    <None Include="bin\Debug\test02.gdb\a00000001.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000001.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000001.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000001.TablesByName.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000002.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000002.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000003.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000003.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000003.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000004.CatItemsByPhysicalName.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000004.CatItemsByType.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000004.FDO_UUID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000004.freelist" />
+    <None Include="bin\Debug\test02.gdb\a00000004.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000004.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000004.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000004.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000005.CatItemTypesByName.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000005.CatItemTypesByParentTypeID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000005.CatItemTypesByUUID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000005.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000005.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000005.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000006.CatRelsByDestinationID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000006.CatRelsByOriginID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000006.CatRelsByType.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000006.FDO_UUID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000006.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000006.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000006.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000007.CatRelTypesByBackwardLabel.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000007.CatRelTypesByDestItemTypeID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000007.CatRelTypesByForwardLabel.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000007.CatRelTypesByName.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000007.CatRelTypesByOriginItemTypeID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000007.CatRelTypesByUUID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000007.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000007.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000007.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000009.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000009.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000009.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000009.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000000a.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000000a.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000000a.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000000a.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000000b.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000000b.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000000b.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000000b.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000000c.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000000c.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000000c.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000000c.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000000d.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000000d.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000000d.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000000d.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000000e.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000000e.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000000e.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000000e.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000000f.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000000f.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000000f.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000000f.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000010.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000010.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000010.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000010.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000011.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000011.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000011.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000011.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000012.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000012.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000012.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000012.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000013.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000013.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000013.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000013.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000014.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000014.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000014.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000014.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000015.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000015.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000015.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000015.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000016.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000016.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000016.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000016.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000017.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000017.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000017.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000017.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000018.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000018.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000018.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000018.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000019.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000019.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000019.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000019.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000001a.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000001a.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000001a.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000001a.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000001b.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000001b.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000001b.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000001b.spx" />
+    <None Include="bin\Debug\test02.gdb\a0000001c.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000001c.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000001c.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000001d.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000001d.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000001d.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000001d.N_1_Desc_0.atx" />
+    <None Include="bin\Debug\test02.gdb\a0000001d.N_1_Desc_1.atx" />
+    <None Include="bin\Debug\test02.gdb\a0000001e.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000001e.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000001e.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000001e.N_1_Topology_0.atx" />
+    <None Include="bin\Debug\test02.gdb\a0000001f.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a0000001f.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a0000001f.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a0000001f.N_1_JunctionWeight_0.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000020.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000020.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000020.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000020.N_1_EdgeWeight_0.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000021.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000021.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000021.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000021.N_1_TurnWeight_0.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000022.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000022.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000022.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000022.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000023.freelist" />
+    <None Include="bin\Debug\test02.gdb\a00000023.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000023.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000023.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000023.GDB_25_IsRetired.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000023.spx" />
+    <None Include="bin\Debug\test02.gdb\a00000024.gdbindexes" />
+    <None Include="bin\Debug\test02.gdb\a00000024.gdbtable" />
+    <None Include="bin\Debug\test02.gdb\a00000024.gdbtablx" />
+    <None Include="bin\Debug\test02.gdb\a00000024.GDB_26_ClassID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000024.GDB_26_OID.atx" />
+    <None Include="bin\Debug\test02.gdb\a00000024.GDB_26_UpdateType.atx" />
+    <None Include="bin\Debug\test02.gdb\gdb" />
+    <None Include="bin\Debug\test02.gdb\ND_24_DirtyAreas.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\ND_24_DirtyObjects.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\network_ND_Junctions.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\N_1_Desc.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\N_1_EdgeWeight.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\N_1_EdgeWeight.FENGZHIWEI-PC.11660.rd.lock" />
+    <None Include="bin\Debug\test02.gdb\N_1_JunctionWeight.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\N_1_Props.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\N_1_Topology.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\N_1_Topology.FENGZHIWEI-PC.11660.rd.lock" />
+    <None Include="bin\Debug\test02.gdb\N_1_TurnWeight.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\S5.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\S5连接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\S8.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\S8.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\S8_1.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\S8连接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\timestamps" />
+    <None Include="bin\Debug\test02.gdb\XXX.mxd" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.11348.11016.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.11660.11164.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.13860.12416.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.5360.7340.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.7064.4696.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.8108.7600.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.8896.8392.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\_gdb.FENGZHIWEI-PC.8924.7660.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\一二轧回流水管.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\一二轧回流水管连接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\主电动等冷却净环回水管道.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\主电动等冷却净环回水管道连接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\井.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\回用水给水管.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\回用水给水管连接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\排水管.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\排水管连接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\浊环给水管.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\浊环给水管连接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\生产水管.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\生产水管连接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\test02.gdb\预留大棒用水接点.FENGZHIWEI-PC.11628.10364.sr.lock" />
+    <None Include="bin\Debug\XNTG\XNTG.mxd" />
+    <None Include="bin\Debug\XNTG\XNTG\S5.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\S5.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\S5.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\S5.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\S5.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\S5.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\S5连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\S5连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\S5连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\S5连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\S5连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\S5连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\S8.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\S8.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\S8.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\S8.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\S8.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\S8.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\S8连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\S8连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\S8连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\S8连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\S8连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\S8连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\XNTG.mxd" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\一二轧回流水管连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管道连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管道连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管道连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管道连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管道连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管道连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\井.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\井.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\井.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\井.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\井.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\井.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\回用水给水管连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水井.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\排水井.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\排水井.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\排水井.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水井.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\排水井.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管2连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\排水管连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\浊环给水管连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管连接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管连接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管连接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管连接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管连接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\生产水管连接点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\电缆沟.cpg" />
+    <None Include="bin\Debug\XNTG\XNTG\电缆沟.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\电缆沟.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\电缆沟.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\电缆沟.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\电缆沟.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\电缆沟.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆.CPG" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆拐点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆拐点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆拐点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆拐点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆拐点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\直埋电缆拐点.shx" />
+    <None Include="bin\Debug\XNTG\XNTG\预留大棒用水接点.dbf" />
+    <None Include="bin\Debug\XNTG\XNTG\预留大棒用水接点.prj" />
+    <None Include="bin\Debug\XNTG\XNTG\预留大棒用水接点.sbn" />
+    <None Include="bin\Debug\XNTG\XNTG\预留大棒用水接点.sbx" />
+    <None Include="bin\Debug\XNTG\XNTG\预留大棒用水接点.shp" />
+    <None Include="bin\Debug\XNTG\XNTG\预留大棒用水接点.shx" />
+    <None Include="bin\Debug\帮助文档.CHM" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bin\Debug\factory.gdb\a00000001.freelist" />
+    <None Include="bin\Debug\factory.gdb\a00000001.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000001.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000001.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000001.TablesByName.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000002.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000002.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000003.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000003.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000003.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000004.CatItemsByPhysicalName.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000004.CatItemsByType.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000004.FDO_UUID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000004.freelist" />
+    <None Include="bin\Debug\factory.gdb\a00000004.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000004.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000004.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000004.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000005.CatItemTypesByName.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000005.CatItemTypesByParentTypeID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000005.CatItemTypesByUUID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000005.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000005.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000005.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000006.CatRelsByDestinationID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000006.CatRelsByOriginID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000006.CatRelsByType.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000006.FDO_UUID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000006.freelist" />
+    <None Include="bin\Debug\factory.gdb\a00000006.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000006.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000006.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000007.CatRelTypesByBackwardLabel.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000007.CatRelTypesByDestItemTypeID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000007.CatRelTypesByForwardLabel.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000007.CatRelTypesByName.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000007.CatRelTypesByOriginItemTypeID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000007.CatRelTypesByUUID.atx" />
+    <None Include="bin\Debug\factory.gdb\a00000007.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000007.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000007.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a0000003a.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a0000003a.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a0000003a.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a0000003a.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000076.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000076.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000076.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000076.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000077.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000077.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000077.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000077.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000078.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000078.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000078.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000078.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000079.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000079.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000079.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000079.spx" />
+    <None Include="bin\Debug\factory.gdb\a0000007a.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a0000007a.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a0000007a.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a0000007a.spx" />
+    <None Include="bin\Debug\factory.gdb\a0000007b.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a0000007b.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a0000007b.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a0000007b.spx" />
+    <None Include="bin\Debug\factory.gdb\a0000007c.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a0000007c.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a0000007c.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a0000007c.spx" />
+    <None Include="bin\Debug\factory.gdb\a0000007f.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a0000007f.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a0000007f.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a0000007f.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000081.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000081.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000081.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000081.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000082.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000082.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000082.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000082.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000083.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000083.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000083.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000083.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000087.freelist" />
+    <None Include="bin\Debug\factory.gdb\a00000087.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000087.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000087.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000087.spx" />
+    <None Include="bin\Debug\factory.gdb\a00000088.freelist" />
+    <None Include="bin\Debug\factory.gdb\a00000088.gdbindexes" />
+    <None Include="bin\Debug\factory.gdb\a00000088.gdbtable" />
+    <None Include="bin\Debug\factory.gdb\a00000088.gdbtablx" />
+    <None Include="bin\Debug\factory.gdb\a00000088.spx" />
+    <None Include="bin\Debug\factory.gdb\All_road.C9E7WJQTJTJPCVQ.9876.10160.sr.lock" />
+    <None Include="bin\Debug\factory.gdb\All_road.FENGZHIWEI-PC.2712.7124.sr.lock" />
+    <None Include="bin\Debug\factory.gdb\All_road.FENGZHIWEI-PC.5892.7032.sr.lock" />
+    <None Include="bin\Debug\factory.gdb\All_road.FENGZHIWEI-PC.6788.6784.sr.lock" />
+    <None Include="bin\Debug\factory.gdb\gdb" />
+    <None Include="bin\Debug\factory.gdb\timestamps" />
+    <None Include="bin\Debug\factory.gdb\Untitled.sxd" />
+    <None Include="bin\Debug\factory.gdb\Untitled02.sxd" />
+    <None Include="bin\Debug\factory.gdb\_gdb.C9E7WJQTJTJPCVQ.9876.10160.sr.lock" />
+    <None Include="bin\Debug\factory.gdb\_gdb.FENGZHIWEI-PC.2712.7124.sr.lock" />
+    <None Include="bin\Debug\factory.gdb\_gdb.FENGZHIWEI-PC.5892.7032.sr.lock" />
+    <None Include="bin\Debug\factory.gdb\_gdb.FENGZHIWEI-PC.6788.6784.sr.lock" />
+    <None Include="bin\Debug\factory.gdb\西宁特钢模型.sxd" />
+    <None Include="bin\Debug\newdata\latestdata.mxd" />
+    <None Include="bin\Debug\newdata\S5.dbf" />
+    <None Include="bin\Debug\newdata\S5.prj" />
+    <None Include="bin\Debug\newdata\S5.sbn" />
+    <None Include="bin\Debug\newdata\S5.sbx" />
+    <None Include="bin\Debug\newdata\S5.shp" />
+    <None Include="bin\Debug\newdata\S5.shx" />
+    <None Include="bin\Debug\newdata\S5连接点.dbf" />
+    <None Include="bin\Debug\newdata\S5连接点.prj" />
+    <None Include="bin\Debug\newdata\S5连接点.sbn" />
+    <None Include="bin\Debug\newdata\S5连接点.sbx" />
+    <None Include="bin\Debug\newdata\S5连接点.shp" />
+    <None Include="bin\Debug\newdata\S5连接点.shx" />
+    <None Include="bin\Debug\newdata\S8.dbf" />
+    <None Include="bin\Debug\newdata\S8.prj" />
+    <None Include="bin\Debug\newdata\S8.sbn" />
+    <None Include="bin\Debug\newdata\S8.sbx" />
+    <None Include="bin\Debug\newdata\S8.shp" />
+    <None Include="bin\Debug\newdata\S8.shx" />
+    <None Include="bin\Debug\newdata\S8连接点.dbf" />
+    <None Include="bin\Debug\newdata\S8连接点.prj" />
+    <None Include="bin\Debug\newdata\S8连接点.sbn" />
+    <None Include="bin\Debug\newdata\S8连接点.sbx" />
+    <None Include="bin\Debug\newdata\S8连接点.shp" />
+    <None Include="bin\Debug\newdata\S8连接点.shx" />
+    <None Include="bin\Debug\newdata\一二轧回流水管.dbf" />
+    <None Include="bin\Debug\newdata\一二轧回流水管.prj" />
+    <None Include="bin\Debug\newdata\一二轧回流水管.sbn" />
+    <None Include="bin\Debug\newdata\一二轧回流水管.sbx" />
+    <None Include="bin\Debug\newdata\一二轧回流水管.shp" />
+    <None Include="bin\Debug\newdata\一二轧回流水管.shx" />
+    <None Include="bin\Debug\newdata\一二轧回流水管连接点.dbf" />
+    <None Include="bin\Debug\newdata\一二轧回流水管连接点.prj" />
+    <None Include="bin\Debug\newdata\一二轧回流水管连接点.sbn" />
+    <None Include="bin\Debug\newdata\一二轧回流水管连接点.sbx" />
+    <None Include="bin\Debug\newdata\一二轧回流水管连接点.shp" />
+    <None Include="bin\Debug\newdata\一二轧回流水管连接点.shx" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道.dbf" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道.prj" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道.sbn" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道.sbx" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道.shp" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道.shx" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道连接点.dbf" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道连接点.prj" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道连接点.sbn" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道连接点.sbx" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道连接点.shp" />
+    <None Include="bin\Debug\newdata\主电动等冷却净环回水管道连接点.shx" />
+    <None Include="bin\Debug\newdata\井.dbf" />
+    <None Include="bin\Debug\newdata\井.prj" />
+    <None Include="bin\Debug\newdata\井.sbn" />
+    <None Include="bin\Debug\newdata\井.sbx" />
+    <None Include="bin\Debug\newdata\井.shp" />
+    <None Include="bin\Debug\newdata\井.shx" />
+    <None Include="bin\Debug\newdata\回用水给水管.dbf" />
+    <None Include="bin\Debug\newdata\回用水给水管.prj" />
+    <None Include="bin\Debug\newdata\回用水给水管.sbn" />
+    <None Include="bin\Debug\newdata\回用水给水管.sbx" />
+    <None Include="bin\Debug\newdata\回用水给水管.shp" />
+    <None Include="bin\Debug\newdata\回用水给水管.shx" />
+    <None Include="bin\Debug\newdata\回用水给水管连接点.dbf" />
+    <None Include="bin\Debug\newdata\回用水给水管连接点.prj" />
+    <None Include="bin\Debug\newdata\回用水给水管连接点.sbn" />
+    <None Include="bin\Debug\newdata\回用水给水管连接点.sbx" />
+    <None Include="bin\Debug\newdata\回用水给水管连接点.shp" />
+    <None Include="bin\Debug\newdata\回用水给水管连接点.shx" />
+    <None Include="bin\Debug\newdata\排水管.dbf" />
+    <None Include="bin\Debug\newdata\排水管.prj" />
+    <None Include="bin\Debug\newdata\排水管.sbn" />
+    <None Include="bin\Debug\newdata\排水管.sbx" />
+    <None Include="bin\Debug\newdata\排水管.shp" />
+    <None Include="bin\Debug\newdata\排水管.shx" />
+    <None Include="bin\Debug\newdata\排水管连接点.dbf" />
+    <None Include="bin\Debug\newdata\排水管连接点.prj" />
+    <None Include="bin\Debug\newdata\排水管连接点.sbn" />
+    <None Include="bin\Debug\newdata\排水管连接点.sbx" />
+    <None Include="bin\Debug\newdata\排水管连接点.shp" />
+    <None Include="bin\Debug\newdata\排水管连接点.shx" />
+    <None Include="bin\Debug\newdata\浊环给水管.dbf" />
+    <None Include="bin\Debug\newdata\浊环给水管.prj" />
+    <None Include="bin\Debug\newdata\浊环给水管.sbn" />
+    <None Include="bin\Debug\newdata\浊环给水管.sbx" />
+    <None Include="bin\Debug\newdata\浊环给水管.shp" />
+    <None Include="bin\Debug\newdata\浊环给水管.shx" />
+    <None Include="bin\Debug\newdata\浊环给水管连接点.dbf" />
+    <None Include="bin\Debug\newdata\浊环给水管连接点.prj" />
+    <None Include="bin\Debug\newdata\浊环给水管连接点.sbn" />
+    <None Include="bin\Debug\newdata\浊环给水管连接点.sbx" />
+    <None Include="bin\Debug\newdata\浊环给水管连接点.shp" />
+    <None Include="bin\Debug\newdata\浊环给水管连接点.shx" />
+    <None Include="bin\Debug\newdata\生产水管.dbf" />
+    <None Include="bin\Debug\newdata\生产水管.prj" />
+    <None Include="bin\Debug\newdata\生产水管.sbn" />
+    <None Include="bin\Debug\newdata\生产水管.sbx" />
+    <None Include="bin\Debug\newdata\生产水管.shp" />
+    <None Include="bin\Debug\newdata\生产水管.shx" />
+    <None Include="bin\Debug\newdata\生产水管连接点.dbf" />
+    <None Include="bin\Debug\newdata\生产水管连接点.prj" />
+    <None Include="bin\Debug\newdata\生产水管连接点.sbn" />
+    <None Include="bin\Debug\newdata\生产水管连接点.sbx" />
+    <None Include="bin\Debug\newdata\生产水管连接点.shp" />
+    <None Include="bin\Debug\newdata\生产水管连接点.shx" />
+    <None Include="bin\Debug\newdata\预留大棒用水接点.dbf" />
+    <None Include="bin\Debug\newdata\预留大棒用水接点.prj" />
+    <None Include="bin\Debug\newdata\预留大棒用水接点.sbn" />
+    <None Include="bin\Debug\newdata\预留大棒用水接点.sbx" />
+    <None Include="bin\Debug\newdata\预留大棒用水接点.shp" />
+    <None Include="bin\Debug\newdata\预留大棒用水接点.shx" />
+    <None Include="bin\Debug\PipeLine.vshost.exe.manifest" />
+    <None Include="bin\Debug\帮助.CHM" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000001.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000001.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000001.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000001.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000001.TablesByName.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000002.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000002.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000003.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000003.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000003.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000004.CatItemsByPhysicalName.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000004.CatItemsByType.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000004.FDO_UUID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000004.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000004.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000004.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000004.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000004.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000005.CatRelsByDestinationID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000005.CatRelsByOriginID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000005.CatRelsByType.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000005.FDO_UUID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000005.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000005.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000005.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000005.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.CatRelTypesByBackwardLabel.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.CatRelTypesByDestItemTypeID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.CatRelTypesByForwardLabel.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.CatRelTypesByName.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.CatRelTypesByOriginItemTypeID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.CatRelTypesByUUID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000006.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000007.CatItemTypesByName.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000007.CatItemTypesByParentTypeID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000007.CatItemTypesByUUID.atx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000007.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000007.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000007.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000000e.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000000e.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000000e.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000000e.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000000e.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000014.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000014.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000014.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000014.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000014.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000016.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000016.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000016.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000016.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000016.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000017.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000017.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000017.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000017.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000017.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000018.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000018.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000018.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000018.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a00000018.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001b.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001b.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001b.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001b.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001b.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001c.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001c.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001c.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001c.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001c.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001d.freelist" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001d.gdbindexes" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001d.gdbtable" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001d.gdbtablx" />
+    <None Include="bin\Debug\最新数据\model.gdb\a0000001d.spx" />
+    <None Include="bin\Debug\最新数据\model.gdb\factory.sxd" />
+    <None Include="bin\Debug\最新数据\model.gdb\gdb" />
+    <None Include="bin\Debug\最新数据\model.gdb\lizi.sxd" />
+    <None Include="bin\Debug\最新数据\model.gdb\timestamps" />
+    <None Include="bin\Debug\最新数据\S2.dbf" />
+    <None Include="bin\Debug\最新数据\S2.sbn" />
+    <None Include="bin\Debug\最新数据\S2.sbx" />
+    <None Include="bin\Debug\最新数据\S2.shp" />
+    <None Include="bin\Debug\最新数据\S2.shx" />
+    <None Include="bin\Debug\最新数据\Untitled.sxd" />
+    <None Include="bin\Debug\最新数据\管线模型.sxd" />
+    <None Include="bin\Debug\最新数据\西宁特钢模型.sxd" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\along.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\along.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\along.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\along.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\along.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\along.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\hydrant well.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\hydrant well.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\hydrant well.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\hydrant well.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\hydrant well.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\hydrant well.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\hydrant well.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\Pipe.mxd" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.shp.ed.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.shp.SHIMENG-PC.11352.12220.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5connectpoint.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5connectpoint.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5connectpoint.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5connectpoint.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5connectpoint.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5connectpoint.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5connectpoint.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5joggle.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5joggle.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5joggle.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5joggle.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5joggle.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5joggle.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S5joggle.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.shp.ed.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.shp.SHIMENG-PC.11352.12220.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8connectpoint.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8connectpoint.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8connectpoint.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8connectpoint.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8connectpoint.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8connectpoint.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8connectpoint.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8joggle.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8joggle.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8joggle.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8joggle.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8joggle.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8joggle.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\S8joggle.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\shape_test.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\shape_test.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\shape_test.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\shape_test.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\test_shape.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\test_shape.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\test_shape.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\test_shape.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\test_shape.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\test_shape.shx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\well point.dbf" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\well point.prj" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\well point.sbn" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\well point.sbx" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\well point.shp" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\well point.shp.6UFO9K5EVVBL4TL.7560.9704.sr.lock" />
+    <None Include="bin\Debug\最新数据\配准后矢量新\well point.shx" />
+    <None Include="Properties\DataSources\PipeLine.ChildWindow.AttributeQuery.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\2016-03-14\3Ddata - 修改\New Folder\" />
+    <Folder Include="bin\Debug\newdata\obj\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\S5.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\S8.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\一二轧回流水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\主电动等冷却净环回流.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\回用水给水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\排水管2.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\浊环给水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\热力管道.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\燃气管道.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\生产水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\电气管线.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\3Ddata - 修改\给排水管道.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井模型\Water_Pool_Light.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井模型\_______.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_1.dae0.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_1.dae1.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_12.dae0.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_12.dae1.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_14.dae0.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_14.dae1.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_2.dae0.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_2.dae1.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_5.dae0.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_5.dae1.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_9.dae0.jpg" />
+    <Content Include="bin\Debug\2016-03-14\水井\水井纹理\ID_9.dae1.jpg" />
+    <Content Include="bin\Debug\2016-03-14\连接点\S5连接点\S5连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\连接点\S8连接点\S8阀门.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\连接点\一二轧回流水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\连接点\回用水给水管阀门.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\连接点\排水管阀门.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S5阀门\Metal_Corrogated_Shiny.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S5阀门\Metal_Rusted.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S5阀门\Metal_Seamed.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02\Metal_Corrogated_Shiny.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02\Metal_Rusted.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S5阀门\S5阀门02\Metal_Seamed.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\S8阀门\S8阀门.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧02.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧阀门阀门\Metal_Corrogated_Shiny.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧阀门阀门\Metal_Rusted.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\一二轧\一二轧阀门阀门\Metal_Seamed.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门\Metal_Corrogated_Shiny.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门\Metal_Rusted.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\回用水给水管\回用水给水管阀门\Metal_Seamed.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门\Metal_Corrogated_Shiny.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门\Metal_Rusted.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\排水管阀门\排水管阀门\Metal_Seamed.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门.shp.xml" />
+    <Content Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门\Metal_Corrogated_Shiny.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门\Metal_Rusted.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门\浊环给水管\浊环给水管阀门\Metal_Seamed.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门纹理\阀门\Metal_Corrogated_Shiny.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门纹理\阀门\Metal_Rusted.jpg" />
+    <Content Include="bin\Debug\2016-03-14\阀门纹理\阀门\Metal_Seamed.jpg" />
+    <Content Include="bin\Debug\Image_Icon\PointNumber_Chart.ico" />
+    <Content Include="bin\Debug\pic\定位火灾.ico" />
+    <Content Include="bin\Debug\pic\选中.gif" />
+    <Content Include="Image\fire_radius.ico" />
+    <Content Include="Image\圆.png" />
+    <Content Include="Image\坐标.png" />
+    <Content Include="Image\多边形.png" />
+    <Content Include="Image\定位 %281%29.png" />
+    <Content Include="Image\定位.png" />
+    <Content Include="Image\报表.png" />
+    <Content Include="Image\显示流向.png" />
+    <Content Include="Image\显示流向2.png" />
+    <Content Include="Image\消防栓.ico" />
+    <Content Include="Image\火灾.png" />
+    <Content Include="Image\点查询.png" />
+    <Content Include="Image\管线管径统计.ico" />
+    <Content Include="Image\管线统计.ico" />
+    <Content Include="Image\表格.png" />
+    <Content Include="Image\长度统计.ico" />
+    <Content Include="Image\长方形.png" />
+    <Content Include="Image\闪烁 %281%29.png" />
+    <Content Include="Image\闪烁.png" />
+    <Content Include="Image\鼠标.png" />
+    <EmbeddedResource Include="BaseComm\DeleteLayer.bmp" />
+    <EmbeddedResource Include="BaseComm\OpenAttributeTable.bmp" />
+    <EmbeddedResource Include="BaseComm\FullExtent.bmp" />
+    <EmbeddedResource Include="BaseComm\Owntolayer.bmp" />
+    <EmbeddedResource Include="BaseComm\TrackLine.bmp" />
+    <EmbeddedResource Include="BaseComm\TrackLine.cur" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\S8.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\S8连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\一二轧回流水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\主电动等冷却净环回水管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\井.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\回用水给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\循环水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\循环水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\排水井.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\排水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\排水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\浊环给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\消火栓井.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\热力管道.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\热力管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\煤气管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\煤气管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\燃气管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\生产、消防给水阀门井.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\生产水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\生产水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\生产消防水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\电气管道.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\电气管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\电缆沟.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\直埋电缆拐点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\给排水管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\阀门井.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160322数据整合\预留大棒用水接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160411数据整合\20160411数据整合\建筑物.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160411数据整合\20160411数据整合\说明.txt" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水井.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\排水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\新水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\浊环给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\软水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-03-22\20160426数据整合\20160426数据整合\雨水篦子.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\井.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\热力管道.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\热力管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\燃气管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\生产、消防给水阀门井.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\电气管道.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\电气管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\shp\给排水管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\Desktop\XNTG修改0114.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\2016-3-1\Desktop\说明.txt" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\井.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\热力管道.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\热力管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\燃气管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\电气管道.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\电气管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\shp\给排水管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\S5.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\S5连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\S8.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\S8连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\一二轧回流水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\主电动等冷却净环回水管道连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\井.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\回用水给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\排水井.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管2连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\排水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\浊环给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\生产水管连接点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\电缆沟.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\直埋电缆拐点.shp.xml" />
+    <Content Include="bin\Debug\2016-3-1\XNTG\XNTG\预留大棒用水接点.shp.xml" />
+    <Content Include="bin\Debug\AdminLog.txt" />
+    <Content Include="bin\Debug\Image_Icon\blue_rectangle.ico" />
+    <Content Include="bin\Debug\newdata\S5.png" />
+    <Content Include="bin\Debug\newdata\S5.shp.xml" />
+    <Content Include="bin\Debug\newdata\S52.png" />
+    <Content Include="bin\Debug\newdata\S53.png" />
+    <Content Include="bin\Debug\newdata\S8.png" />
+    <Content Include="bin\Debug\newdata\S8.shp.xml" />
+    <Content Include="bin\Debug\newdata\一二轧回流水管.png" />
+    <Content Include="bin\Debug\newdata\一二轧回流水管.shp.xml" />
+    <Content Include="bin\Debug\newdata\主电动等冷却净环回水管道.png" />
+    <Content Include="bin\Debug\newdata\主电动等冷却净环回水管道.shp.xml" />
+    <Content Include="bin\Debug\newdata\回用水给水管.png" />
+    <Content Include="bin\Debug\newdata\回用水给水管.shp.xml" />
+    <Content Include="bin\Debug\newdata\回用水给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\newdata\排水管.png" />
+    <Content Include="bin\Debug\newdata\排水管.shp.xml" />
+    <Content Include="bin\Debug\newdata\浊环给水管.png" />
+    <Content Include="bin\Debug\newdata\浊环给水管.shp.xml" />
+    <Content Include="bin\Debug\newdata\浊环给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\newdata\生产水管.png" />
+    <Content Include="bin\Debug\newdata\生产水管.shp.xml" />
+    <Content Include="bin\Debug\newdata\生产水管连接点.shp.xml" />
+    <Content Include="bin\Debug\pic\Connection16.png" />
+    <Content Include="bin\Debug\pic\LayerZoomTo16.png" />
+    <Content Include="bin\Debug\pic\LayerZoomTo32.png" />
+    <Content Include="bin\Debug\pic\LocationGetPoint32.png" />
+    <Content Include="bin\Debug\pic\test.bmp" />
+    <Content Include="bin\Debug\pic\left.png" />
+    <Content Include="bin\Debug\pic\test_burst.gif" />
+    <Content Include="bin\Debug\pic\UtilityNetworkJunctionAddTool16.png" />
+    <Content Include="bin\Debug\pic\UtilityNetworkJunctionAddTool32.png" />
+    <Content Include="bin\Debug\pic\UtilityNetworkSolve16.png" />
+    <Content Include="bin\Debug\pic\UtilityNetworkSolve32.png" />
+    <Content Include="bin\Debug\pic\关阀分析.gif" />
+    <Content Include="bin\Debug\pic\爆管点.png" />
+    <Content Include="bin\Debug\pic\阀门.png" />
+    <Content Include="bin\Debug\PipeLine.exe" />
+    <Content Include="bin\Debug\PipeLine.pdb" />
+    <Content Include="bin\Debug\PipeLine.vshost.exe" />
+    <Content Include="bin\Debug\XNTG\XNTG\S5.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\S5连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\S8.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\S8连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\一二轧回流水管.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\一二轧回流水管连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\主电动等冷却净环回水管道连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\井.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\回用水给水管.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\回用水给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\排水井.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\排水管.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\排水管2.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\排水管2连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\排水管连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\浊环给水管.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\浊环给水管连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\生产水管.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\生产水管连接点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\电缆沟.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\直埋电缆.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\直埋电缆拐点.shp.xml" />
+    <Content Include="bin\Debug\XNTG\XNTG\预留大棒用水接点.shp.xml" />
+    <Content Include="Class\attributes.ico" />
+    <Content Include="Image\20150109071645941_easyicon_net_32.png" />
+    <Content Include="Image\20150123050756854_easyicon_net_32.png" />
+    <Content Include="Image\20150123050908878_easyicon_net_32.png" />
+    <Content Include="Image\20150123090900426_easyicon_net_32.png" />
+    <Content Include="Image\3D-information.ico" />
+    <Content Include="Image\3D_Rotation.png" />
+    <Content Include="Image\about.ico" />
+    <Content Include="Image\addlay.png" />
+    <Content Include="Image\arrowggree.png" />
+    <Content Include="Image\attribute.png" />
+    <Content Include="Image\attributes.ico" />
+    <Content Include="Image\bitbug_favicon.ico" />
+    <Content Include="Image\buffer.ico" />
+    <Content Include="Image\cad.png" />
+    <Content Include="Image\CadastralPRImage1_32.png" />
+    <Content Include="Image\Cancel mark.png" />
+    <Content Include="Image\cancle.png" />
+    <Content Include="Image\cleardistance.ico" />
+    <Content Include="Image\Connection.png" />
+    <Content Include="Image\cross.ico" />
+    <Content Include="Image\cross.png" />
+    <Content Include="Image\down.png" />
+    <Content Include="Image\EditingConstructGeodetic32.png" />
+    <Content Include="Image\EditingReshapeTopologyEdgeTool32.png" />
+    <Content Include="Image\EditingShowSharedFeatures32.png" />
+    <Content Include="Image\ElementLine32.png" />
+    <Content Include="Image\error.png" />
+    <Content Include="Image\excavator.ico" />
+    <Content Include="Image\exportlayer.png" />
+    <Content Include="Image\facilityst.ico" />
+    <Content Include="Image\feature.ico" />
+    <Content Include="Image\flow.ico" />
+    <Content Include="Image\GeodatabaseConnectionAddNew32.ico" />
+    <Content Include="Image\GeodatabaseConnectionAddNew32.png" />
+    <Content Include="Image\HelpSystemBlue48.png" />
+    <Content Include="Image\image.png" />
+    <Content Include="Image\interface.png" />
+    <Content Include="Image\left.png" />
+    <Content Include="Image\lengthst.ico" />
+    <Content Include="Image\line.png" />
+    <Content Include="Image\lineanalysis.ico" />
+    <Content Include="Image\linest.ico" />
+    <Content Include="Image\mArea.ico" />
+    <Content Include="Image\materiallabel.png" />
+    <Content Include="Image\measureaera64.png" />
+    <Content Include="Image\mLine.ico" />
+    <Content Include="Image\mouse32.png" />
+    <Content Include="Image\ooopic_1440486138.ico" />
+    <Content Include="Image\other.png" />
+    <Content Include="Image\otherMessage.png" />
+    <Content Include="Image\pan.png" />
+    <Content Include="Image\pipe.ico" />
+    <Content Include="Image\pipelin.ico" />
+    <Content Include="Image\pipepoint.ico" />
+    <Content Include="Image\pipepoint.png" />
+    <Content Include="Image\pipepoint2.png" />
+    <Content Include="Image\play.ico" />
+    <Content Include="Image\point.bmp" />
+    <Content Include="Image\point.png" />
+    <Content Include="Image\PointNumber.ico" />
+    <Content Include="Image\pointst.ico" />
+    <Content Include="Image\pointSymbol.png" />
+    <Content Include="Image\poligon.png" />
+    <Content Include="Image\QQ截图20160523104842.png" />
+    <Content Include="Image\query.ico" />
+    <Content Include="Image\quick.png" />
+    <Content Include="Image\radiulabel.png" />
+    <Content Include="Image\radiuslabel.png" />
+    <Content Include="Image\right.png" />
+    <Content Include="Image\right2.png" />
+    <Content Include="Image\right3.png" />
+    <Content Include="Image\ruler64.png" />
+    <Content Include="Image\Save.png" />
+    <Content Include="Image\saveas.png" />
+    <Content Include="Image\SDCNetworkDataset32.png" />
+    <Content Include="Image\soil.png" />
+    <Content Include="Image\steparea_64×64.png" />
+    <Content Include="Image\symbol.ico" />
+    <Content Include="Image\symbol.png" />
+    <Content Include="Image\table.ico" />
+    <Content Include="Image\total.png" />
+    <Content Include="Image\tquery.ico" />
+    <Content Include="Image\tresult.ico" />
+    <Content Include="Image\us.png" />
+    <Content Include="Image\zoomin.png" />
+    <Content Include="Image\zoomout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
